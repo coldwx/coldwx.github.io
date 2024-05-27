@@ -1,4 +1,4 @@
-<p align="center">❉ Hello ❉</p>
+# <p align="center">❉ Hello ❉</p>
 
 `magicwindow` is a "self aware puzzle game" from [BootMe_-_CrackMe](https://xlogicx.net/BootMe_-_CrackMe.html). These puzzles are boot loaders, and can be ran with `qemu-system-i386`.
 

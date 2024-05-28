@@ -49,3 +49,4 @@ This confirms that we will jump to location 0x12d if our input is 0x58. There ap
 
 Locations 0x7d93 and 0x7d92 seem to be mentioned. If we look at the first two screenshots from the top of the page, we see the values at those locations. One remains the same, yet one has changed.
 
+![magicwindow_r324](https://github.com/coldwx/coldwx.github.io/assets/170867841/01503f65-aa6a-4858-a1ce-e9a2e682963b)

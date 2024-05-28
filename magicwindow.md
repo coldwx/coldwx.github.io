@@ -53,7 +53,7 @@ Locations 0x7d93 and 0x7d92 seem to be mentioned. If we look at the first two sc
 
 Infact, every so often, 0x7d93 will change while 0x7d92 does not.
 
-Early on in the code, it appears to be moving a BIOS clock, 0x46c, into those two locations. It is being changed because of time!
+Early on in the code, the program appears to be moving a BIOS clock, 0x46c, into those two locations. It is being changed because of time!
 
 ![magicwindow_clock](https://github.com/coldwx/coldwx.github.io/assets/170867841/b284534c-30dd-4a69-af98-005bade58e90)
 

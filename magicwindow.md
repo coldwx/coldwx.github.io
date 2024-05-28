@@ -30,3 +30,15 @@ With knowledge of what the puzzle is modifying, we can disassemble the code with
 This will produce an output where we can view the assembly code. One line stands out:
 
 ![magicwindow_dis](https://github.com/coldwx/coldwx.github.io/assets/170867841/d6c58a8c-7b99-4b4a-a446-1369bc7da88c)
+
+Our location of interest, 0x7d90, is being compared to 0x58. If equal, the program then runs code located at 0x12d. Let's use 0x58 as the input.
+
+![magicwindow_58](https://github.com/coldwx/coldwx.github.io/assets/170867841/654db1dc-2138-4ef6-a0ed-edd8ea60c025)
+
+Nothing happens. `magicwindow` will display a colorful, animated screen when you input the correct values. There has to be more to the logic.
+
+One tool for disassembly that will make the code a little easier to read is [radare2](https://rada.re/n/radare2.html).
+
+`r2 -b 16 magicwindow` and then `v` will show the code in a colorful way along with some helpful loop graphics on the side.
+
+![magicwindow_r21](https://github.com/coldwx/coldwx.github.io/assets/170867841/09867aca-b3ab-470c-b93a-bca17ff253be)

@@ -23,7 +23,7 @@ Comparing the first screenshot with the second reveals that the `FF` was placed 
 
 ![magicwindow_d3e](https://github.com/coldwx/coldwx.github.io/assets/170867841/88dd8e87-9bc0-44fa-96ea-a2dd41e6535e)
 
-Counting all the bytes, `FF` is located in spot 400 of 512. Because the puzzle is in hexadecimal, we'll convert that decimal of 400 to a hex of 0x190. The program itself starts at a location of 0x7c00. 0x7c00 plus 0x190 reveals our `FF` to be located at 0x7d90.
+Counting all the bytes, `FF` is located in spot 400 of 512. Because the puzzle is in hexadecimal, we'll convert that decimal of 400 to a hex of 0x190. The program itself starts at a location of 0x7c00. 0x7c00 + 0x190 reveals our `FF` to be located at 0x7d90.
 
 With knowledge of what the puzzle is modifying, we can disassemble the code with `objdump -D -b binary -mi386 -Maddr16,data16 -M intel magicwindow`.
 

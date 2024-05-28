@@ -53,6 +53,10 @@ Locations 0x7d93 and 0x7d92 seem to be mentioned. If we look at the first two sc
 
 Infact, every so often, 0x7d93 will change while 0x7d92 does not.
 
+Early on in the code, it appears to be moving a BIOS clock, 0x46c, into those two locations. It is being changed because of time!
+
+![magicwindow_clock](https://github.com/coldwx/coldwx.github.io/assets/170867841/b284534c-30dd-4a69-af98-005bade58e90)
+
 Back to the code following our comparison to 0x58, the program is moving 0x7d93 into the higher portion of the `ax` register, and 0x7d92 into the lower portion. These registers are `ah` and `al`, respectfully. 
 
 `al` is then subtracted from `ah`. It is then compared to 0xf, or 15 in decimal. If the difference is above 15, it is then compared to 0x11, or 17 in decimal. Finally, if the difference is below 17, the program continues on. Below 17, yet above 15, should be 16, or 0x10.

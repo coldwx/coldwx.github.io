@@ -18,3 +18,9 @@ Now we can input two hexadecimal values to try to get a reaction:
 4. `d` to display the new dump
 
 ![magicwindow_d2](https://github.com/coldwx/coldwx.github.io/assets/170867841/167d4bc6-89e6-42e6-97f5-fcc3e06b50a4)
+
+Comparing the first screenshot with the second reveals that the `FF` was placed below the 21 and above the 00 bytes.
+
+![magicwindow_d3e](https://github.com/coldwx/coldwx.github.io/assets/170867841/88dd8e87-9bc0-44fa-96ea-a2dd41e6535e)
+
+Counting all the bytes, our `FF` is located in spot 400 of 512.

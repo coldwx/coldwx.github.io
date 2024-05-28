@@ -50,3 +50,9 @@ This confirms that we will jump to location 0x12d if our input is 0x58. There ap
 Locations 0x7d93 and 0x7d92 seem to be mentioned. If we look at the first two screenshots from the top of the page, we see the values at those locations. One remains the same, yet one has changed.
 
 ![magicwindow_r324](https://github.com/coldwx/coldwx.github.io/assets/170867841/01503f65-aa6a-4858-a1ce-e9a2e682963b)
+
+Infact, every so often, 0x7d93 will change while 0x7d92 does not.
+
+Back to the code following our comparison to 0x58, the program is moving 0x7d93 into the higher portion of the `ax` register, and 0x7d92 into the lower portion. These registers are `ah` and `al`, respectfully. 
+
+`al` is then subtracted from `ah`. It is then compared to 0xf, or 15 in decimal. If the difference is above 15, it is then compared to 0x11, or 17 in decimal. Finally, if the difference is below 17, the program continues on. Below 17, yet above 15, should be 16, or 0x10.

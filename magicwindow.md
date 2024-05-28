@@ -39,6 +39,6 @@ Nothing happens. `magicwindow` will display a colorful, animated screen when you
 
 One tool for disassembly that will make the code a little easier to read is [radare2](https://rada.re/n/radare2.html).
 
-`r2 -b 16 magicwindow` and then `v` will show the code in a colorful way along with some helpful loop graphics on the side.
+`r2 -b 16 magicwindow` and then `v` will show the code in a colorful way along with some helpful looping graphics on the side.
 
 ![magicwindow_r21](https://github.com/coldwx/coldwx.github.io/assets/170867841/09867aca-b3ab-470c-b93a-bca17ff253be)

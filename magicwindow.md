@@ -59,4 +59,20 @@ Early on in the code, the program appears to be moving a BIOS clock, 0x46c, into
 
 Back to the code following our comparison to 0x58, the program is moving 0x7d93 into the higher portion of the `ax` register, and 0x7d92 into the lower portion. These registers are `ah` and `al`, respectfully. 
 
+| AH | AL |
+| --- | --- |
+| 0x7d93 | 0x7d92 |
+| 5E | 57 |
+
 `al` is then subtracted from `ah`. It is then compared to 0xf, or 15 in decimal. If the difference is above 15, it is then compared to 0x11, or 17 in decimal. Finally, if the difference is below 17, the program continues on. Below 17, yet above 15, should be 16, or 0x10.
+
+While the intial value of 0x7d92 will always be different depending on when you start the program, we can add 0x10 to get the desired value of 0x7d93. 
+
+For example, our first run had 57 at 0x7d92. 0x57 + 0x10 would mean we need 0x7d93 to be 67.
+
+Repeating `Enter` and `d` will help us watch as the value increases.
+
+When 0x7d93 reaches that sum, we can `i` the value 58, and win the puzzle.
+
+![magicwindow_win](https://github.com/coldwx/coldwx.github.io/assets/170867841/c5649a7f-9410-4470-ab79-38419f118ae0)
+

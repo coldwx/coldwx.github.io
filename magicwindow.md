@@ -42,3 +42,10 @@ One tool for disassembly that will make the code a little easier to read is [rad
 `r2 -b 16 magicwindow` and then `v` will show the code in a colorful way along with some helpful looping graphics on the side.
 
 ![magicwindow_r21](https://github.com/coldwx/coldwx.github.io/assets/170867841/09867aca-b3ab-470c-b93a-bca17ff253be)
+
+This confirms that we will jump to location 0x12d if our input is 0x58. There appears to be more logic after that though.
+
+![magicwindow_r22](https://github.com/coldwx/coldwx.github.io/assets/170867841/966deaee-8f7a-4c26-b15f-4ef56a3f6580)
+
+Locations 0x7d93 and 0x7d92 seem to be mentioned. If we look at the first two screenshots from the top of the page, we see the values at those locations. One remains the same, yet one has changed.
+

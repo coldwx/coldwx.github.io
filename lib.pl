@@ -1,0 +1,15 @@
+http://ice2.somafm.com/bootliquor-32-aac
+http://ice6.somafm.com/cliqhop-32-aac
+http://ice4.somafm.com/defcon-32-aac
+http://ice2.somafm.com/digitalis-32-aac
+http://ice2.somafm.com/doomed-32-aac
+http://ice4.somafm.com/fluid-32-aac
+http://ice2.somafm.com/groovesalad-32-aac
+http://ice2.somafm.com/indiepop-32-aac
+http://ice2.somafm.com/metal-32-aac
+http://ice4.somafm.com/poptron-32-aac
+http://ice4.somafm.com/brfm-32-aac
+http://ice6.somafm.com/spacestation-32-aac
+http://ice2.somafm.com/thetrip-32-aac
+http://ice6.somafm.com/thistle-32-aac
+http://ice6.somafm.com/vaporwaves-32-aac

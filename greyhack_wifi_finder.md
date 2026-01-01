@@ -1,3 +1,4 @@
+```
 crypto = include_lib("/lib/crypto.so")
 airmon(crypto, "start", "wlan0")
 hostComputer = get_shell.host_computer
@@ -26,3 +27,4 @@ ACKs = 300000 / previousPWR[0]
 aireplay(crypto, BSSID, ESSID, ACKs)
 wifi_pwd = aircrack(crypto, "/home/" + active_user + "/file.cap")
 print(ESSID + ":" + wifi_pwd)
+```
